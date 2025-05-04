@@ -45,6 +45,7 @@
             }
             return true;
         }
+        
     </script>
 </head>
 <body>
@@ -67,6 +68,18 @@
         <p><input type="submit" value="send" name="submit"></p>
         <p><input type="reset" value="reset" name="reset"></p>
     </form>
+    <button id="myButton">Click Me</button>
+<p id="output"></p>
+
+<script>
+
+const button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  // This function will be executed when the button is clicked
+  document.getElementById("output").textContent = "Button Clicked!";
+});
+</script>
+
 </center>
 
 </body>
